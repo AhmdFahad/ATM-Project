@@ -129,8 +129,8 @@ public class Frame {
 			public void actionPerformed(ActionEvent e) {
 				i = Integer.parseInt(in.getText());
 				if (i <= money) {
-					money = i - money;
-					lb3.setText("you Withdraw" + i + "$");
+					money = money - i;
+					lb3.setText("you Withdraw :" + i + "$");
 				} else {
 					lb3.setText("You dont hava money ");
 				}
